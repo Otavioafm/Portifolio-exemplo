@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    background: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #192635;
+    transition: background 0.4s ease-in;
+}
+
+p{
+    font-family: Chakra Petch;
+    color: #FFF;
+}
+
+
+
+h2{
+    font-family:Raleway;
+
+    background: linear-gradient(45deg,#ffffff, #4f4d4d, #9a9898);
+    background-size: 400% 100%;
+    animation:degrade 10s linear infinite  ;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+/*Apresentação*/
+
+.titulo{
+    font-size: 45px;
+    font-family:Raleway;
+    text-shadow: 0 0 20px #24d1f0;
+    text-transform: uppercase;
+    text-align: center;
+    
+    
+
+    background:linear-gradient(45deg,#329c92,  #90eeff, #0bb4b4);
+    background-size: 400% 100%;
+    animation:degrade 10s linear infinite  ;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.gmail-png{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    margin-top: 0%;
+    left: 10em;
+    border-radius: 20px;
+}
+.gmail-png:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+.gmail-png:not(:hover){ 
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.apresentacao{
+    position: relative;
+    top: 2em;
+}
+
+.img-perfil{
+    position: absolute;
+    height: 235px;
+    border-radius: 150px;
+    top: 8em;
+    left: 0.5em;
+}
+.img-perfil:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+.img-perfil:not(:hover){ 
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+}
+
+.apresentacao-titulo{
+    position: absolute;
+    font-family:Raleway;
+    font-style: italic;
+    display: flex;
+    font-size: 40px;
+    left: 6.3em;
+    top: 2em;
+    color: #FFF;
+    text-shadow: 0 0 20px #d7c8cc;
+}
+
+.link-png{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    margin-top: 5em;
+    left: 42em;
+    border-radius: 30px;
+}
+.link-png:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+.link-png:not(:hover){ 
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.apresentacao-texto{
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    left: 12.5em;
+    top: 8.5em;
+}
+
+/*Sobre Mim*/
+
+.sobremim{
+    position: relative;
+    top: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta-png{
+    position: relative;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #020202;
+}
+.insta-png:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+.insta-png:not(:hover){ 
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sobremim-titulo{
+    position: relative;
+    font-family:Raleway;
+    font-style: italic;
+    font-size: 40px;
+    color: #FFF;
+    text-shadow: 0 0 20px #d7c8cc;
+}
+
+.sobremim-texto{
+    position: absolute;
+    top: 5em;
+}
+
+/*Projetos*/
+
+
+.projetos-titulo{
+    position: relative;
+    display: flex;
+    font-family:Raleway;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    top: 16em;
+    color: #FFF;
+    text-shadow: 0 0 20px #d7c8cc;
+}
+
+.git-png{
+    background-color: #FFF;
+    position: absolute;
+    width: 80px;
+    border-radius: 51%;
+    top: 65.7em;
+    left: 30em;
+}
+.git-png:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+.git-png:not(:hover){ 
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+}
+
+/*Projetos Cards*/
+.page-content {
+    display: grid;
+    position: relative;
+    top: 62em;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+    .page-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 800px) {
+    .page-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+  
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 1px 1px #0000001a, 0 2px 2px #0000001a, 0 4px 4px #0000001a, 0 8px 8px #0000001a, 0 16px 16px #0000001a;
+}
+@media (min-width: 600px) {
+    .card {
+      height: 350px;
+    }
+}
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+.card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+    background-image: url(/img/Instagram-Icon.jpg);
+    background-size: 100% 100%;
+}
+.card:nth-child(2):before {
+    background-image: url(/img/forma.png);
+    background-size: 100% 90%;
+    
+}
+.card:nth-child(3):before {
+    background-image: url(/img/dev\ sincero.png);
+    background-size: 100% 70%;
+}
+.card:nth-child(4):before {
+    background-image: url(/img/pokedex.png);
+    background-size: 99% 90%;
+}
+  
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+.content > * + * {
+    margin-top: 1rem;
+}
+  
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+  
+.copy {
+    font-family: Chakra Petch;
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+  
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.btn:hover {
+    background-color: #0d0d0d;
+}
+.btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
+  
+@media (hover: hover) and (min-width: 600px) {
+    .card:after {
+      transform: translateY(0);
+}
+  
+.content {
+    transform: translateY(calc(100% - 4.5rem));
+}
+.content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+}
+  
+.card:hover,
+.card:focus-within {
+      align-items: center;
+    }
+.card:hover:before,
+.card:focus-within:before {
+      transform: translateY(-4%);
+    }
+.card:hover:after,
+.card:focus-within:after {
+      transform: translateY(-50%);
+    }
+.card:hover .content,
+.card:focus-within .content {
+      transform: translateY(0);
+    }
+.card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(var(--d) / 8);
+    }
+  
+.card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+}
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
